@@ -1,12 +1,21 @@
 {
   "name": "web-template",
   "devDependencies": {
+    "@bunchtogether/vite-plugin-flow": "1.0.2",
+    "flow-bin": "0.241.0",
+    "hermes-eslint": "0.23.0",
     "standard": "17.1.0",
     "vite": "5.3.4"
   },
+  "standard": {
+    "parser": "hermes-eslint",
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
   "scripts": {
-    "build": "vite build --emptyOutDir --outDir ../dist src",
-    "dev": "vite --port 1234 src",
+    "build": "vite build --config ./vite.config.mjs --emptyOutDir --outDir ../dist src",
+    "dev": "vite --config ./vite.config.mjs --port 1234 src",
     "format": "standard src",
     "preview": "vite preview --port 1234"
   }

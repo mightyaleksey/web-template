@@ -1,0 +1,13 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+enums=false
+server.max_workers=2
+
+[strict]

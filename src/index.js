@@ -1,2 +1,4 @@
-const text = document.createTextNode('Hello')
-document.body.appendChild(text)
+/* @flow */
+const msg: string = 'hello'
+const text = document.createTextNode(msg)
+document.body?.appendChild(text)
