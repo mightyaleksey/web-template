@@ -1,0 +1,13 @@
+{
+  "name": "web-template",
+  "devDependencies": {
+    "standard": "17.1.0",
+    "vite": "5.3.4"
+  },
+  "scripts": {
+    "build": "vite build --emptyOutDir --outDir ../dist src",
+    "dev": "vite --port 1234 src",
+    "format": "standard src",
+    "preview": "vite preview --port 1234"
+  }
+}
