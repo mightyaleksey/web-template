@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "ect-bin": "1.4.1",
+    "html-minifier": "4.0.0",
+    "posthtml": "0.16.6",
+    "roadroller": "2.1.0"
+  }
+}
