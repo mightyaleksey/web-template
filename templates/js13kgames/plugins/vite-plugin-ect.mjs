@@ -6,15 +6,15 @@ export function ectPlugin () {
   return {
     name: 'vite:ect',
     writeBundle: async (options, bundle) => {
-      // since we embeded all assets before,
+      // since we embedded all assets before,
       // we can ignore those
-      const inlinedFiles = Object.values(bundle)
+      const embeddedFiles = Object.values(bundle)
         .map(asset => asset.fileName)
 
       const files = await fs.promises.readdir('dist/')
       const assetFiles = files
         .filter(file =>
-          !inlinedFiles.includes(file) &&
+          !embeddedFiles.includes(file) &&
           !file.endsWith('.html') &&
           !file.endsWith('.zip'))
         .map(file => `dist/${file}`)
