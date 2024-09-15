@@ -34,7 +34,7 @@ export default defineConfig(props => {
           assetsDir: '',
           rollupOptions: {
             output: {
-              assetFileNames: '[name].[extname]',
+              assetFileNames: '[name][extname]',
               inlineDynamicImports: true
             }
           }

@@ -1,10 +1,7 @@
 {
-  "dependencies": {
-    "preact": "10.24.0"
-  },
+  "name": "web-template",
   "devDependencies": {
     "@babel/preset-flow": "7.24.7",
-    "@preact/preset-vite": "2.9.1",
     "babel-plugin-syntax-hermes-parser": "0.23.1",
     "flow-bin": "0.241.0",
     "hermes-eslint": "0.23.0",

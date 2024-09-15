@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import babel from 'vite-plugin-babel'
 import preact from '@preact/preset-vite'
 
 const babelConfig = {
@@ -26,12 +25,12 @@ export default defineConfig(props => {
           assetsInlineLimit: 800
         },
         esbuild: true,
-        plugins: [babel({ babelConfig })]
+        plugins: [preact({ babel: babelConfig })]
       }
 
     default:
       return {
-        plugins: [babel({ babelConfig }), preact()]
+        plugins: [preact({ babel: babelConfig })]
       }
   }
 })
