@@ -1,4 +1,5 @@
 {
+  "name": "web-template",
   "dependencies": {
     "preact": "10.24.0"
   },
@@ -37,6 +38,7 @@
   "scripts": {
     "build": "vite build --config ./vite.config.mjs --emptyOutDir --outDir ../dist src",
     "dev": "vite --config ./vite.config.mjs --port 1234 src",
-    "format": "standard src"
+    "format": "standard src",
+    "start": "sh scripts/setup.sh"
   }
 }

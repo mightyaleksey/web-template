@@ -1,4 +1,5 @@
 {
+  "name": "web-template",
   "devDependencies": {
     "@babel/preset-flow": "7.24.7",
     "babel-plugin-syntax-hermes-parser": "0.23.1",
@@ -39,6 +40,7 @@
     "analyse": "cd src && vite-bundle-visualizer --config ../vite.config.mjs --template sunburst",
     "build": "vite build --config ./vite.config.mjs --emptyOutDir --outDir ../dist src",
     "dev": "vite --config ./vite.config.mjs --port 1234 src",
-    "format": "standard src"
+    "format": "standard src",
+    "start": "sh scripts/setup.sh"
   }
 }

@@ -1,3 +1,6 @@
 {
-  "name": "web-template"
+  "name": "web-template",
+  "scripts": {
+    "start": "sh scripts/setup.sh"
+  }
 }
