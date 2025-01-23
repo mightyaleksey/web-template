@@ -1,6 +1,8 @@
 {
   "name": "web-template",
+  "private": true,
+  "bin": "scripts/bin.sh",
   "scripts": {
-    "start": "sh scripts/setup.sh"
+    "start": "sh scripts/bin.sh"
   }
 }

@@ -8,16 +8,11 @@ Project templates designed to save time during initial setup. So instead of spen
 All the project templates are powered by [vitejs](https://vitejs.dev). And have a necessary configuration for the [flowtype](https://flow.org).
 
 
-## How to
+## How to use
 
-Choose a template:
+Run:
 ```
-npm run start
+npx github:mightyaleksey/web-template <destination>
 ```
 
-This will copy necessary files to the project folder. After that just install dependencies and clean up unnecessary files:
-
-```
-npm install
-rm -rf scripts templates
-```
+This one will ask to choose a template and will copy necessary files to the destination folder after. After that just install dependencies and clean up unnecessary files.
