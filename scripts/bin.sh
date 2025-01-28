@@ -23,14 +23,24 @@ if [ ! -d "$__workingname/$destname" ]; then
   mkdir -p "$__workingname/$destname"
 fi
 
-# copy template files
+# directories
 template_dir="$__projectname/templates/$selected_template"
 project_dir="$__workingname/$destname"
 
+# file, source directory
+function copy_file() {
+  echo "create $destname/$1"
+  cp -r "$2/$1" "$project_dir/"
+}
+
+# copy template files
 for f in $(ls "$template_dir"); do
-  echo "create $destname/$f"
-  cp -r "$template_dir/$f" "$project_dir/"
+  copy_file "$f" "$template_dir"
 done
+
+# copy generic files
+copy_file ".gitignore" "$__projectname"
+copy_file ".vscode" "$__projectname"
 
 # update package name
 sed -i '' -e "s/web-template/$(basename $destname)/" "$project_dir/package.json"
