@@ -3,6 +3,6 @@
   "private": true,
   "bin": "scripts/bin.sh",
   "scripts": {
-    "start": "sh scripts/bin.sh"
+    "start": "scripts/bin.sh"
   }
 }
