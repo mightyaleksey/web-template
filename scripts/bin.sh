@@ -49,6 +49,7 @@ for f in $(ls "$template_dir"); do
 done
 
 # copy generic files
+copy_file ".flowconfig" "$__templates_dir"
 copy_file ".gitignore" "$__templates_dir"
 copy_file ".vscode" "$__templates_dir"
 copy_file "scripts/patch.sh" "$__templates_dir"
